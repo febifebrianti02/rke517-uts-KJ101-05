@@ -48,3 +48,24 @@ Tool for all entries: Claude (Anthropic), chat on claude.ai. Date for all entrie
 - What it said: the AI gave the open questions the IDs OQ-1 to OQ-6 in the spreadsheet, but Part A uses Q-01 to Q-07 and has one more question (Q-07, about the letter number and the "Doctor" column). The first draft of B_models/README.md also said Mas Rizky described "six steps", but the interview gives five stages (doctor fills the form, patient waits at the counter, admin types, prints and brings it for the signature, patient receives the letter and a copy goes to the folder, admin writes the log book). The first flowmap picture also had red notes on top of arrows.
 - Why it was wrong for my case: wrong IDs would send the client to a different question than the one I mean in Part A and in the PRD. A wrong step count says the model does not match the interview.
 - What I did: I compared the files with each other and with the interview, then fixed the IDs in the spreadsheet, the sentence in the README of B_models, and moved the notes in the flowmap.
+
+## Entry 7
+- Date and part (A-F): 10 Nov 2026, E (two creative pieces)
+- Tool: Claude chat (it also ran code: matplotlib for the mock-up, reportlab for the poster)
+- My prompt (copy it): "buatkan bisa?" (after we talked about choosing two of the five pieces, and the mock-up and the poster)
+- What the AI gave (short): a mock-up with two screens (new referral request, and referral list with status, approve, draft preview and locked print button) as a PNG, and an A4 poster "What changes on Monday" for counter staff as a PDF. It also filled the table in creative/README.md.
+- What I kept, changed or rejected, and why: I kept both pieces and the choice of mock-up and poster, because both are accurate to my PRD data list and rounds. The first mock-up picture had a status label that ran outside the screen and a text that overlapped a column; the first poster had the last status box outside the page margin. These were fixed before I used them. I check every field in the mock-up against the PRD data list before the oral check.
+
+## Entry 8
+- Date and part (A-F): 12 Nov 2026, D (change request CR-1), planning
+- Tool: Claude chat
+- My prompt (copy it): "terus gimana kalo ada ini" (with the CR-1 message and the task text for the change request), and then "Buat Claude Doc dari jawaban terakhir Anda."
+- What the AI gave (short): a plan for CR-1: which files and diagrams are affected, what does not change, five new open questions (the branch's process, users and internet, letter numbering, who sees what, RM numbers), the GitHub steps, and a Claude Doc with this plan.
+- What I kept, changed or rejected, and why: I kept the idea that the site is an attribute and not a new entity, because the ERD is already at six entities and the limit is six. The answers to the new questions are proposals only; the client did not say them, so they are marked "(my assumption)" and listed as open questions.
+
+## Entry 9
+- Date and part (A-F): 12 Nov 2026, D (drafts of the change)
+- Tool: Claude chat (it also ran code: graphviz for the diagrams, matplotlib and reportlab for the creative pieces)
+- My prompt (copy it): "buatkan semua nya untuk perubahan tersebut"
+- What the AI gave (short): drafts of the changed files (A, B models and the three diagrams, PRD, C), the CHANGELOG entry, the mock-up and poster updated for the site, and the texts for issue CR-1, the pull request and the v1.1 release notes.
+- What I kept, changed or rejected, and why: before I use them I compare each changed file with the CR-1 message, so that every new rule comes from the client and everything else is an assumption or a question. The PR checklist asks for exactly that.
